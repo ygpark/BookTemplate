@@ -1,0 +1,83 @@
+:toc:
+
+= 헥스 디지털포렌식
+
+== 환경설정
+
+이 책은 ``asciidoc``형식의 텍스트 파일로 만들어졌고, ``asciidoctor``를 사용해서 책을 만듭니다. ``Asciidoctor``를 사용하려면 ruby를 설치해야합니다.
+
+
+=== Chocolatey 설치하기
+
+윈도우즈 사용자만 따라해 주세요.
+
+먼저 패키지 매니저 Chocolatey를 설치합니다.
+
+----
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+----
+
+위 명령은 Chocolatey 공식 홈페이지(https://chocolatey.org/install)를 참고하였습니다.
+
+
+=== ruby 설치하기
+
+Chocolatey를 사용해서 ruby를 설치해줍니다.
+
+----
+choco intall ruby
+----
+
+
+=== make 설치하기
+
+책 생성 명령은 Makefile에 적혀있습니다. Makefile은 make명령으로 실행하죠.
+
+----
+choco install make
+----
+
+
+=== asciidoctor관련 패키지 설치
+
+asciidoctor관련 패키지를 설치합니다. 그리고 PDF에서 한글을 표현하기 위한 폰트도 다운로드 받습니다.
+
+----
+bundle install
+make font
+----
+
+== 책 생성하기
+
+html, pdf 형식의 책을 생성하는 명령입니다.
+
+----
+make
+----
+
+html 형식 책을 생성하는 명령입니다.
+
+----
+make html
+----
+
+pdf 형식 책을 생성하는 명령입니다.
+
+----
+make pdf
+----
+
+저장소를 처음 상태로 정리합니다.
+
+----
+make clean
+----
+
+폰트를 다시 다운로드합니다.
+
+----
+make font
+----
+
+
+
