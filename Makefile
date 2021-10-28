@@ -1,7 +1,7 @@
 BOOKNAME=NewBook
 DESTDIR=./_book/
 
-all: html pdf
+all: html pdf readme
 
 html:
 	asciidoctor $(BOOKNAME).adoc -D $(DESTDIR)
@@ -11,6 +11,11 @@ pdf:
 	
 readme:
 	asciidoctor README.adoc -D $(DESTDIR)
+	asciidoctor-pdf -a scripts=cjk -a pdf-fontsdir=./fonts -a pdf-theme=./korean-theme.yml README.adoc -D $(DESTDIR)
+	
+test:
+	asciidoctor TEST.adoc -D $(DESTDIR)
+	asciidoctor-pdf -a scripts=cjk -a pdf-fontsdir=./fonts -a pdf-theme=./korean-theme.yml TEST.adoc -D $(DESTDIR)
 
 font:
 	mkdir -p fonts
