@@ -10,7 +10,13 @@
 
 === ruby 설치하기
 
-link:https://rubyinstaller.org/downloads/[루비 공식 홈페이지](link:https://rubyinstaller.org/downloads/[])에서  `Ruby 3.0.2-1 (x64).exe`를 다운로드해서 설치합니다.
+2가지만 기억하세요.
+
+1. Devkit이 포함된 ruby 설치하기
+2. 마지막 검은색 명령창에서 ``1 + 엔터``, ``2 + 엔터``, ``3 + 엔터``
+
+
+link:https://rubyinstaller.org/downloads/[루비 공식 홈페이지](link:https://rubyinstaller.org/downloads/[])에서  `rubyinstaller-devkit-3.0.2-1-x64.exe`를 다운로드해서 설치합니다.
 
 마지막 검은색 명령창이 떴을 때가 가장 중요합니다. 반드시 ``1 엔터``, ``2 엔터``, ``3 엔터`` 를 순서대로 입력해서 모두 설치해야 합니다.
 
