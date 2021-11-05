@@ -1,29 +1,31 @@
 BOOKNAME=NewBook
-DESTDIR=./_book/
 
-all: html pdf readme
+all: html pdf
 
 html:
-	asciidoctor $(BOOKNAME).adoc -D $(DESTDIR)
+	asciidoctor $(BOOKNAME).adoc
 
 pdf:
-	asciidoctor-pdf -a scripts=cjk -a pdf-fontsdir=./fonts -a pdf-theme=./korean-theme.yml $(BOOKNAME).adoc -D $(DESTDIR)
+	asciidoctor-pdf -a scripts=cjk -a pdf-fontsdir=./fonts -a pdf-theme=./korean-theme.yml $(BOOKNAME).adoc
 
 test:
-	asciidoctor TEST.adoc -D $(DESTDIR)
+	asciidoctor TEST.adoc
 
 readme:
-	asciidoctor README.adoc -D $(DESTDIR)
+	asciidoctor README.adoc
 
 clean:
-	rm -rf $(DESTDIR)
+	rm -f NewBook.pdf
+	rm -f NewBook.html
+	rm -f README.pdf
+	rm -f README.html
 
 font:
 	mkdir -p fonts
 	install-font.bat
 
 bundle:
-	gem install rake
+	#gem install rake
 	gem install asciidoctor
 	gem install asciidoctor-pdf
 	gem install asciidoctor-pdf-cjk
@@ -35,3 +37,4 @@ bundle:
 	gem install thread_safe
 	gem install epubcheck-ruby
 	gem install html-proofer
+	

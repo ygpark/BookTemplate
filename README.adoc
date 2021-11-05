@@ -1,4 +1,5 @@
 :toc:
+:toc-title: 차례
 
 = README
 
@@ -20,13 +21,13 @@ link:https://rubyinstaller.org/downloads/[루비 공식 홈페이지](link:https
 
 마지막 검은색 명령창이 떴을 때가 가장 중요하다. 반드시 ``1 엔터``, ``2 엔터``, ``3 엔터`` 를 순서대로 입력해서 모두 설치해야 한다.
 
-image::./images/ruby-setup-001.png[공식 ruby 홈페이지,width=500,align=center]
-image::./images/ruby-setup-002.png[설치 1단계,width=500,align=center]
-image::./images/ruby-setup-003.png[설치 2단계,width=500,align=center]
-image::./images/ruby-setup-004.png[설치 3단계,width=500,align=center]
-image::./images/ruby-setup-005.png[설치 4단계,width=500,align=center]
-image::./images/ruby-setup-006.png[설치 5단계,width=500,align=center]
-image::./images/ruby-setup-007.png[설치 6단계,width=500,align=center]
+image::./images/readme/ruby-setup-001.png[공식 ruby 홈페이지,width=500,align=center]
+image::./images/readme/ruby-setup-002.png[설치 1단계,width=500,align=center]
+image::./images/readme/ruby-setup-003.png[설치 2단계,width=500,align=center]
+image::./images/readme/ruby-setup-004.png[설치 3단계,width=500,align=center]
+image::./images/readme/ruby-setup-005.png[설치 4단계,width=500,align=center]
+image::./images/readme/ruby-setup-006.png[설치 5단계,width=500,align=center]
+image::./images/readme/ruby-setup-007.png[설치 6단계,width=500,align=center]
 
 
 

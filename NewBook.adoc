@@ -1,18 +1,16 @@
 = NewBook
 박영기
+v1.0, 2021-11-05
 :doctype: book
 :docinfo:
 :toc:
 :toclevels: 2
 :pagenums:
-:front-cover-image: image:book/cover.png[width=1050,height=1600]
+//:front-cover-image: image:book/cover.png[width=1050,height=1600]
 :icons: font
 :source-highlighter: coderay
+:toc-title: 차례
 
-== 제1장 제목
+include::book/ch01/sections/01-title.adoc[]
 
-내용
-
-== 제2장 제목
-
-내용
+include::book/ch02/sections/01-title.adoc[]
