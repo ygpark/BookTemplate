@@ -24,8 +24,8 @@ readme:
 	asciidoctor README.adoc
 
 clean:
-	rm -f NewBook.pdf
-	rm -f NewBook.html
+	rm -f $(BOOKNAME).pdf
+	rm -f $(BOOKNAME).html
 	rm -f README.pdf
 	rm -f README.html
 
