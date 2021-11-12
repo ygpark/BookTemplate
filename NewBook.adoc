@@ -6,7 +6,7 @@ v1.0, 2021-11-05
 :toc:
 :toclevels: 2
 :pagenums:
-//:front-cover-image: image:book/cover.png[width=1050,height=1600]
+:front-cover-image: image:images/cover.png[pdfwidth=1050,height=1600]
 :icons: font
 :source-highlighter: coderay
 :toc-title: 차례
