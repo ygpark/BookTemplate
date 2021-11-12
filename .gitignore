@@ -17,6 +17,7 @@ fonts
 *.epub
 *.mobi
 *.pdf
+*.html
 
 # Gem
 Gemfile.lock
