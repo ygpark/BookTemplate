@@ -1,12 +1,21 @@
 BOOKNAME=NewBook
+CHROME="/c/Program Files/Google/Chrome/Application/chrome.exe"
+ACRORD="/c/Program Files (x86)/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe"
+ROOT="`pwd`"
 
 all: html pdf
 
 html:
 	asciidoctor $(BOOKNAME).adoc
 
+htmlrun: html
+	-if [ -e $(ROOT)/$(BOOKNAME).html ] ; then $(CHROME) $(ROOT)/$(BOOKNAME).html ; fi
+
 pdf:
 	asciidoctor-pdf -a scripts=cjk -a pdf-fontsdir=./fonts -a pdf-theme=./korean-theme.yml $(BOOKNAME).adoc
+
+pdfrun: pdf
+	-if [ -e $(ROOT)/$(BOOKNAME).pdf ] ; then $(ACRORD) $(ROOT)/$(BOOKNAME).pdf ; fi
 
 test:
 	asciidoctor TEST.adoc
